@@ -42,6 +42,10 @@ session_start();
             require_once './views/login.php';       
             break;
         }
+        case "registro":{
+            require_once './views/registro.php';       
+            break;
+        }
         default:
         require_once './views/error.php';       
         

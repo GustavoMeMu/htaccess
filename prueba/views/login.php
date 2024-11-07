@@ -1,3 +1,9 @@
+<?php 
+if (isset($_SESSION['usuario'])) {
+    header("location: inicio");
+    exit;
+}
+?>
 <form class="w-50 p-5" id="login-form">
         <div class="text-center mb-5 c-user">
             <i class="bi bi-person-circle fs-1 text-highlight"></i>
@@ -16,7 +22,7 @@
         </div>
         <div class="mt-4 d-flex justify-content-center">
             <p class="text-white">¿No tienes una cuenta?</p> 
-            <a href="./registro_vista.php" class="text-primary mx-3">Crear</a>
+            <a href="registro" class="text-primary mx-3">Crear</a>
         </div>
     </form>
 

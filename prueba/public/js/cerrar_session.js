@@ -3,7 +3,7 @@ const cerrar_session = () => {
     .then(respuesta => respuesta.json())
     .then(async (respuesta) => {
         await Swal.fire({icon: "success",title:'Sesion Finalizada'});
-        window.location = "login.php";
+        window.location = "login";
     });
 }
 

@@ -1,3 +1,9 @@
+<?php 
+if (!isset($_SESSION['usuario'])) {
+    header("location: login");
+    exit;
+}
+?>
 <div class="text-center">
         <h3 class="m-0">Bienvenido</h3>
         <p><?= $_SESSION['usuario']['email'] ?></p>
